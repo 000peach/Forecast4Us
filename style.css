@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 80vh;
+  width: 100%;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.plate {
+  max-width: 530px;
+  background: linear-gradient(60deg, #fff2c3, #ffde5a);
+  opacity: 85%;
+  color: #fff;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 20px;
+  border-style: outset;
+  border-color: cornflowerblue;
+  padding: 50px 45px;
+  text-align: center;
+  align-self: center;
+}
+
+.search {
+  width: 440px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.placeholder {
+  color: #848484;
+  width: 100px;
+}
+
+.search input {
+  border: 10 solid black;
+  outline: 0;
+  background: #fce2b6;
+  color: black;
+  padding: 10px 25px;
+  width: 120px;
+  height: 55px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search input:hover {
+  border: 10 solid black;
+  padding: 10px 25px;
+  height: 55px;
+  margin-top: 1px;
+  border-color: cornflowerblue;
+}
+
+.search button {
+  border: 10;
+  border-color: black;
+  outline: 0;
+  background: #fce2b6;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  border: 10 solid black;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-top: 1px;
+  border-color: cornflowerblue;
+}
+
+.search button img {
+  width: 35px;
+}
+
+.weather {
+  display: inline-block;
+}
+
+.details {
+  display: inline block;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+.icon {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.weather h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+}
+
+.weather h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 10px;
+  color: black;
+}
+
+.info {
+  display: inline-block;
+  padding: 0 20px;
+  align-items: center;
+  text-align: justify;
+  justify-content: space-evenly;
+}
+
+.info img {
+  width: 45px;
+  margin-top: 35px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#wslogo {
+  margin-left: 17px;
+}
+
+.humidity,
+.wind,
+.visibility,
+.pressure {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+.h,
+.ws,
+.v,
+.p {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+.weather {
+  display: none;
+}
+
+.error-message {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  color: cornflowerblue;
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .plate {
+    margin-top: 15px;
+    max-width: 380px;
+    max-height: 700px;
+    align-self: center;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    max-width: 300px;
+    max-height: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search button {
+    max-width: 55px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search button img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .icon {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .temp {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .location {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info {
+    padding: 0 30px;
+  }
+}
